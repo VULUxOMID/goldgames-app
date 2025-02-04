@@ -1,6 +1,6 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   output: 'standalone',
   typescript: {
     ignoreBuildErrors: false,
@@ -8,6 +8,13 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: false,
   },
+  images: {
+    remotePatterns: [],
+    unoptimized: true
+  },
+  experimental: {
+    optimizePackageImports: ['@vercel/analytics', '@vercel/speed-insights']
+  }
 };
 
-export default nextConfig;
+module.exports = nextConfig;

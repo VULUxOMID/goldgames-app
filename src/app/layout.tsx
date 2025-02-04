@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gold Games",
-  description: "Welcome to Gold Games - Your premier gaming destination",
+  title: "GoldGames - GG | Premium Arcade Gaming",
+  description: "Welcome to GoldGames - Your premier arcade gaming destination featuring the latest and most exciting arcade games",
+  keywords: "arcade, games, gaming, entertainment, GoldGames, GG",
 };
 
 export default function RootLayout({
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-white min-h-screen`}
       >
         {children}
         <Analytics />
