@@ -45,6 +45,8 @@ export default function Home() {
                     src={game.image}
                     alt={game.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    priority={game.id === 1}
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent z-10" />
