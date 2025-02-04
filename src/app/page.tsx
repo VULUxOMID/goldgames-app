@@ -41,8 +41,13 @@ export default function Home() {
                 className="group relative overflow-hidden rounded-lg bg-zinc-900 hover:scale-105 transition-transform duration-300"
               >
                 <div className="aspect-[4/3] relative">
+                  <Image
+                    src={game.image}
+                    alt={game.title}
+                    fill
+                    className="object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent z-10" />
-                  <div className="absolute inset-0 bg-zinc-800 animate-pulse" />
                 </div>
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">{game.title}</h3>
